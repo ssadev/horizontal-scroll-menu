@@ -118,35 +118,35 @@ const ScrollMenu: FC<IProps> = ({ data, leftArrow, rightArrow, ...props }) => {
 
   return (
     <>
-      <div className="px-32 mt-3 py-2 ">
-        <div className="flex flex-row py-10 items-center container rounded-md">
-          {leftArrow && (
-            <div
-              className={`py-2 px-2 -ml-2 text-black`}
-              onClick={handleLeftScroll}
-            >
-              {isLeftScrollActive ? leftArrow : <></>}
-            </div>
-          )}
+      {/* <div className="px-3 py-2"> */}
+      <div className="flex flex-row py-10 items-center container rounded-md px-3">
+        {leftArrow && (
           <div
-            className="tags-container flex flex-row items-center h-full overflow-x-auto"
-            ref={tagsContainerElm}
+            className={`py-2 px-2 -ml-2 text-black`}
+            onClick={handleLeftScroll}
           >
-            {data.map((tag, idx) => (
-              <>{tag}</>
-            ))}
+            {isLeftScrollActive ? leftArrow : <></>}
           </div>
-
-          {rightArrow && (
-            <div
-              className={`py-2 px-2 -ml-2 text-black`}
-              onClick={handleRightScroll}
-            >
-              {isRightScrollActive ? rightArrow : <></>}
-            </div>
-          )}
+        )}
+        <div
+          className="tags-container flex flex-row items-center h-full overflow-x-auto py-4"
+          ref={tagsContainerElm}
+        >
+          {data.map((tag, idx) => (
+            <>{tag}</>
+          ))}
         </div>
+
+        {rightArrow && (
+          <div
+            className={`py-2 px-2 -ml-2 text-black`}
+            onClick={handleRightScroll}
+          >
+            {isRightScrollActive ? rightArrow : <></>}
+          </div>
+        )}
       </div>
+      {/* </div> */}
     </>
   );
 };

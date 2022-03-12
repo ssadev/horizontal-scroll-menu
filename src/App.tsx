@@ -13,12 +13,13 @@ const Tags = Array(15)
   .map((_, idx) => (
     <>
       <Tag />
+      {/* <Card /> */}
     </>
   ));
 
 const App = () => {
   return (
-    <div>
+    <div className="container px-20">
       <ScrollMenu
         data={Tags}
         leftArrow={

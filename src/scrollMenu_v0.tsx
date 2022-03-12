@@ -116,7 +116,7 @@ const ScrollMenu = () => {
 
   return (
     <div className="App">
-      <div className="px-32 mt-3 py-2 ">
+      <div className="px-32 mt-3 py-2">
         <div className="flex flex-row h-20 items-center container rounded-md">
           <div
             className={`py-2 px-2 -ml-2 text-black`}
