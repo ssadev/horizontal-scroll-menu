@@ -1,11 +1,9 @@
 import React from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import {
   ArrowCircleLeftIcon,
   ArrowCircleRightIcon,
 } from "@heroicons/react/solid";
 import ScrollMenu from "./ScrollMenu";
-import Card from "./components/card";
 import Tag from "./components/tag";
 
 const Tags = Array(15)
