@@ -13,7 +13,7 @@ const Card = () => {
             alt="lacy spice"
           />
         </div>
-        <h2 className="whitespace-nowrap text-xl py-2">Lacy Spice</h2>
+        <h2 className="whitespace-nowrap text-xl py-2 bg-red-200">Tag</h2>
         <p className="pb-2 text-slate-600">
           Minim et excepteur nostrud in irure amet velit eu minim elit.
         </p>
